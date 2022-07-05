@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>studyhub</title>
+</head>
+<header>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#">STUDY HUB</a></li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item has-submenu"><a tabindex="0"> Resources </a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="#">Math</a></li>
+                    <li class="subitem"><a href="#">Science</a> </li>
+                    <li class="subitem"><a href="#">English</a> </li>
+                    <li class="subitem"><a href="#">History</a> </li>
+                    <li class="subitem"><a href="#"> Digital Tech</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu "><a tabindex="0"> About</a> 
+                <ul class="submenu">
+                    <li class="subitem"><a href="#">About Author</a></li>
+                    <li class="subitem"><a href="#">Contact</a></li>
+                    <li class="subitem"><a href="#">Legal</a></li>
+                </ul>
+            </li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <div class="hero" id="main">
+        <h1>Acheive your Excellence</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, deleniti?</h2>
+    </div>
+    <script>
+        const toggle = document.querySelector('.toggle');
+const menu = document.querySelector('.menu');
+
+function toggleMenu() {
+    if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+        toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+    } else {
+        menu.classList.add("active"); 
+        toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i";
+    }
+
+}
+
+toggle.addEventListener('click', toggleMenu, false);
+
+    const items = document.querySelectorAll(".item");
+    function toggleItem() {
+    if (this.classList.contains("submenu-active")) {
+        this.classList.remove("submenu-active");
+    } else if (menu.querySelector(".submenu-active")) {
+        menu.querySelector(".submenu-active").classList.remove("submenu-active");
+       this.classList.add("submenu-active");
+    } else {
+        this.classList.add("submenu-active");
+    }
+    }
+
+    for (let item of items) {
+        if (item.querySelector(".submenu")) {
+        item.addEventListener("click", toggleItem, false);
+        item.addEventListener("keypress", toggleItem, false);
+        }   
+    }
+    </script>
+</header>
+<body>
+    <div class="main-1">
+        <h1 id="title"> External Preparation </h1> 
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo praesentium velit non explicabo dolorem at numquam cum ea dolorum magnam amet perferendis, aut eligendi ipsum dolor voluptates cumque architecto. In asperiores sapiente impedit hic aperiam eos, quibusdam nulla perferendis fugit dolor ipsum reiciendis animi magni voluptates totam officia ex consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo praesentium velit non explicabo dolorem at numquam cum ea dolorum magnam amet perferendis, aut eligendi ipsum dolor voluptates cumque architecto. In asperiores sapiente impedit hic aperiam eos, quibusdam nulla perferendis fugit dolor ipsum reiciendis animi magni voluptates totam officia ex consequatur.</p>
+        <img src="img/classroom.jpg" alt="Picture of classroom desks" id="image">
+    </div>
+
+    <div class="resources">
+        <h1 class="resources title"> External Resources</h1>
+        <div class="resources maths"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ab? Nulla, sequi? Molestias quas fuga minima eaque! Sit esse id, explicabo sunt possimus eaque eos molestias totam laborum porro. Inventore?</p></div>
+        <div class="resources english"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aliquam harum repellat quasi quod doloremque velit earum, maiores corrupti ex aperiam enim. Architecto expedita similique, voluptatum perspiciatis quasi commodi dignissimos.</p></div>
+        <div class="resources digital"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aliquam harum repellat quasi quod doloremque velit earum, maiores corrupti ex aperiam enim. Architecto expedita similique, voluptatum perspiciatis quasi commodi dignissimos.</p></div>
+        <div class="resources physics"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aliquam harum repellat quasi quod doloremque velit earum, maiores corrupti ex aperiam enim. Architecto expedita similique, voluptatum perspiciatis quasi commodi dignissimos.</p></div> 
+        <div class="resources history"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aliquam harum repellat quasi quod doloremque velit earum, maiores corrupti ex aperiam enim. Architecto expedita similique, voluptatum perspiciatis quasi commodi dignissimos.</p></div>
+        <div class="resources chem"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aliquam harum repellat quasi quod doloremque velit earum, maiores corrupti ex aperiam enim. Architecto expedita similique, voluptatum perspiciatis quasi commodi dignissimos.</p></div>
+    </div>
+</body>
+</html> 
