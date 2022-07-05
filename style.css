@@ -74,6 +74,7 @@ a {
 
 .submenu {
     display: none;
+    text-align: center;
 
 }
 
@@ -152,52 +153,62 @@ a {
     border: 3px soild rgb(239,45,86);
 }
 
-.resources {
+.resource-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
-    grid-template-areas:
-    "title title title"
-    "maths english digital"
-    "physics history chem";
-    font-size: 15px;
-    margin: 15px;
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-content: center;
-}
-
-.resources {
     text-align: center;
+    padding: 15px;
+    margin: 15px;
+    grid-template-areas:
+    "title title title"
+    "maths english history"
+    "chemistry physics digital";
 }
 
-.resources .title {
+.title {
     grid-area: title;
-    text-align: center;
+    margin: 15px;
     font-size: 35px;
 }
 
-.resources .maths {
+.maths {
+    font-family: "Font Awesome 5 Free" ;
     grid-area: maths;
+    content: "\f64c";
+    
 }
 
-.resources .english {
+.english {
     grid-area: english;
 }
 
-.resources .digital {
-    grid-area: digital;
-}
-.resources .physics {
-    grid-area: physics;
-}
-
-.resources .history {
+.history {
     grid-area: history;
 }
 
-.resources .chem {
-    grid-area: chem;
+.chemistry {
+    grid-area: chemistry;
+}
+
+.physics {
+    grid-area: physics;
+}
+
+.digital {
+    grid-area: digital;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(54,53,55);
 }
 
 
