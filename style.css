@@ -153,19 +153,23 @@ a {
     border: 3px soild rgb(239,45,86);
 }
 
+.main-1 .studyhub {
+    color: rgb(47,191,113);
+}
+
 .resource-grid {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 25px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-content: center;
     text-align: center;
     padding: 15px;
-    margin: 15px;
+    margin: 25px;
     grid-template-areas:
     "title title title"
     "maths english history"
-    "chemistry physics digital";
+    "digital physics chemistry";
 }
 
 .title {
@@ -174,35 +178,109 @@ a {
     font-size: 35px;
 }
 
+.resources h3 {
+    font-size: 20px;
+    color: white;
+}
+
+a .resources  {
+    padding-bottom: 10px;
+}
+
+.resources p {
+    font-size: 10px;
+    color: white;
+}
+
 .maths {
-    font-family: "Font Awesome 5 Free" ;
     grid-area: maths;
-    content: "\f64c";
-    
+    background-color: rgba(85, 85, 252, 0.773);
+}
+
+.maths i {
+    margin: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: 900; 
+    content: "\f1ec";
+    color: white;
 }
 
 .english {
     grid-area: english;
+    background-color: rgba(214, 22, 22, 0.691);
+}
+
+.english i {
+    margin: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 70px;
+    line-height: 50px;
+    font-weight: 900; 
+    content: "\f518";
+    color: white;
 }
 
 .history {
     grid-area: history;
+    background-color: rgb(237,125,58);
+}
+
+.history i {
+    margin: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: 900; 
+    content: "\f02d";
+    color: white;
 }
 
 .chemistry {
     grid-area: chemistry;
+    background-color: rgb(140,216,103);
+}
+
+.chemistry i {
+    margin: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 70px;
+    line-height: 50px;
+    font-weight: 900; 
+    content: "\f0c3";
+    color: white;
 }
 
 .physics {
     grid-area: physics;
+    background-color: rgb(47,191,113);
+}
+
+.physics i {
+    margin: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 70px;
+    line-height: 50px;
+    font-weight: 900; 
+    content: "\f5d2";
+    color: white;
 }
 
 .digital {
     grid-area: digital;
+    background-color: rgb(237,125,58);
 }
 
-
-
+.digital i {
+    margin: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: 900; 
+    content: "\f108";
+    color: white;
+}
 
 footer {
     display: flex;
