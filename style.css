@@ -17,6 +17,7 @@
 .hub {
     color: rgb(239,45,86);
 }
+
 nav {
     background-color: rgb(237,125,58) ;
     padding: 0 15px;
@@ -58,7 +59,6 @@ a {
     padding: 5px 10px 5px 10px;
 
 }
-
 
 .logo {
     font-size: 25px;
@@ -123,6 +123,8 @@ a {
     font-weight: 100;
 }
 
+/* Main section */
+
 .main-1 {
     display: grid;
     grid-gap: 15px;
@@ -145,7 +147,8 @@ a {
 
 .main-1 p {
     grid-area: text;
-    font-size: 20px;
+    text-align: left;
+    font-size: 1.5vw;
     margin: 10px;
     font-weight: 300;
 }
@@ -153,13 +156,15 @@ a {
 .main-1 #image {
     grid-area: image;
     height: 100%;
-    border: 3px soild rgb(239,45,86);
+    width: 100%;
 }
 
-.main-1 .studyhub {
+.studyhub {
     color: rgb(47,191,113);
     font-weight: 400;
 }
+
+/* Resource Grid */
 
 .resource-grid {
     display: grid;
@@ -286,6 +291,8 @@ a .resources  {
     color: white;
 }
 
+/* Review */
+
 .review {
     display: grid;
     background-image: linear-gradient(rgba(71, 70, 70, 0.5),rgba(71, 70, 70, 0.5)), url(img/review-background.jpeg);
@@ -305,7 +312,8 @@ a .resources  {
 .indavidual-review {
     background-color: rgba(37, 36, 36, 0.459);
     margin: 3%;
-    padding: 15px;
+    padding: 10px;
+    text-align: center;
 }
 
 .review-item {
@@ -322,6 +330,8 @@ a .resources  {
     margin: 15px 0;
 }
 
+/* Footer */
+
 footer {
     justify-content: center;
     align-content: center;
@@ -336,31 +346,22 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-content: center;
-    grid-gap: 20px;
+    grid-gap: 5px;
     margin: 20px;
 }
 
 .footer-text-section {
     width: 70%;
-}
-
-.footer-text-section h1 {
     margin: 20px;
 }
-
-.footer-text-section p {
-    margin: 20px;
-}
-
 
 .footer-lists {
     display: grid;
     justify-content: right;
     align-content: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 5px;
     width: 100%;
-    margin: 0px 20px 20px 0px;
 }
 
 .footer-lists .footer-list {
@@ -373,6 +374,10 @@ footer {
     list-style-type: none;
 }
 
+.footer-list a {
+    color: rgb(102, 100, 100);
+}
+
 .footer-list ul .footer-title {
     color: rgb(137, 134, 140); 
     margin: 0px 0px 10px 0px;
@@ -380,6 +385,7 @@ footer {
 
 
 @media only screen and (max-width: 800px) {
+    /* Mobile Menu */
     .menu {
         display: flex;
         flex-wrap: wrap;
@@ -397,7 +403,7 @@ footer {
         padding: 15px 5px;
     }
 
-    .menu li.subitem a {
+    .menu li .subitem a {
         padding: 5px;
         font-size: 15px;
     }
@@ -419,6 +425,7 @@ footer {
         display: block;
     }
 
+    /*hero image*/
     .hero h1 {
         text-align: center;
         font-size: 40px;
@@ -437,6 +444,126 @@ footer {
         background-position: bottom;
     }
 
+    /* Main Section */
+
+    .main-1 {
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "title"
+        "text"
+        "image";
+        margin: 25px;
+    }
+    
+    .main-1 #title {
+        grid-area: title;
+        font-size: 25px;
+        margin: 10px;
+    }
+    
+    .main-1 p {
+        grid-area: text;
+        font-size: 15px;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .main-1 #image {
+        grid-area: image;
+        height: 100%;
+        margin: auto;
+    }
+
+    /* Resource Grid */
+    .resource-grid {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+        margin: 15px;
+        grid-template-areas:
+        "title title"
+        "maths english"
+        "history digital"
+        "physics chemistry";
+    }
+
+
+    /* Reviews */
+
+    .review {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5px;    
+        grid-gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    .indavidual-review {
+        background-color: rgba(37, 36, 36, 0.459);
+        margin: 15px;
+        padding: 15px;
+        font-size: 15px;
+    }
+    
+    .review-item {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .review .text {
+        margin: 5px;
+    }
+    
+    .review .text p {
+        font-size: 15px;
+    }
+
+    .review h1 {
+        font-size: 35px;
+        margin: 15px 0;
+    }
+    
+    /* Footer section */ 
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        margin: 20px;
+    }
+    
+    .footer-text-section h1 {
+        margin: 15px;
+    }
+    
+    .footer-text-section p {
+        margin: 10px;
+    }
+    
+    .footer-lists {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+        margin: 0px 5px 5px 0px;
+    }
+    
+    .footer-lists .footer-list {
+        padding: 10px;
+        margin: 0px 10px 10px 10px;
+    }
+    
+    .footer-list ul {
+        margin: 10px;
+        list-style-type: none;
+    }
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -444,7 +571,6 @@ footer {
         width: 100%;
         margin-top: 5px;
         margin-bottom: 5px;
-        margin-left: 10px;
         margin-left: 10px;
         text-align: center;
         justify-items: right;
@@ -456,10 +582,43 @@ footer {
         margin-right: 50%;
         width: 100%;
     }
+
 }
 
+@media only screen and (max-width: 700px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        margin: 20px;
+    }
+    
+    .footer-text-section h1 {
+        margin: 15px;
+    }
+    
+    .footer-text-section p {
+        margin: 10px;
+    }
+    
+    .footer-lists {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+        margin: 0px 5px 5px 0px;
+    }
+    
+    .footer-lists .footer-list {
+        padding: 10px;
+        margin: 0px 10px 10px 10px;
+    }
+    
+    .footer-list ul {
+        margin: 10px;
+        list-style-type: none;
+    }
 
-
-
-
-
+}
