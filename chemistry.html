@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Chemistry</title>
+</head>
+<body>
+    <header>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class="logo"><a href="index.html">STUDY <span class="hub">HUB</span></a></li>
+                    <li class="item"><a href="index.html">Home</a></li>
+                    <li class="item has-submenu"><a tabindex="0"> Resources </a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="maths.html">Math</a></li>
+                            <li class="subitem"><a href="science.html">Science</a> </li>
+                            <li class="subitem"><a href="english.html">English</a> </li>
+                            <li class="subitem"><a href="history.html">History</a> </li>
+                            <li class="subitem"><a href="digital.html"> Digital</a></li>
+                        </ul>
+                    </li>
+                    <li class="item has-submenu "><a tabindex="0"> About</a> 
+                        <ul class="submenu">
+                            <li class="subitem"><a href="about.html">About Author</a></li>
+                            <li class="subitem"><a href="contact.html">Contact</a></li>
+                            <li class="subitem"><a href="legal.html">Legal</a></li>
+                        </ul>
+                    </li>
+                    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+            <div class="hero" id="chemistry">
+                <h1>Level 2 Chemistry</h1>
+            </div>
+            <script>
+                const toggle = document.querySelector('.toggle');
+        const menu = document.querySelector('.menu');
+    
+        function toggleMenu() {
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+                toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+            } else {
+                menu.classList.add("active"); 
+                toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i";
+            }
+    
+        }
+    
+        toggle.addEventListener('click', toggleMenu, false);
+    
+            const items = document.querySelectorAll(".item");
+            function toggleItem() {
+            if (this.classList.contains("submenu-active")) {
+                this.classList.remove("submenu-active");
+            } else if (menu.querySelector(".submenu-active")) {
+                menu.querySelector(".submenu-active").classList.remove("submenu-active");
+            this.classList.add("submenu-active");
+            } else {
+                this.classList.add("submenu-active");
+            }
+            }
+    
+            for (let item of items) {
+                if (item.querySelector(".submenu")) {
+                item.addEventListener("click", toggleItem, false);
+                item.addEventListener("keypress", toggleItem, false);
+                }   
+            }
+            </script>
+        </header>
+    </header>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer-text-section">
+                <h1 class="hub"> STUDY HUB</h1>
+                <p><span class="studyhub">Studyhub</span> is here to help you during a exam season. All the resources you could need are link here in the footer, along with any information you need on the authors and legality of the webiste! Have fun studying!</p>
+            </div>
+            <div class="footer-lists">
+                <div class="footer-list">
+                    <h1>Resources</h1>
+                    <ul>
+                        <li><a href="maths.html">Maths</a></li>
+                        <li><a href="english.html">English</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="physics.html">Physics</a></li>
+                        <li><a href="chemistry.html">Chemistry</a></li>
+                        <li><a href="digital.html">Digital Technology</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <h1>About</h1>
+                    <ul>
+                        <li><a href="about.html">About Author</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="legal.html">legal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <h1>Contact</h1>
+                    <ul>
+                        <li><span class="footer-title">Email:</span></li>
+                        <li>19mbalzarini@wakatipu.school.nz</li>
+                        <li><span class="footer-title">Phone:</span></li>
+                        <li>0274411337</li>
+                        <li><span class="footer-title">Postal Adress:</span></li>
+                        <li>P.O. Box 170 Arrowtown, Queenstown, New Zealand 9351</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

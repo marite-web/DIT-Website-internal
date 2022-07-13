@@ -88,6 +88,7 @@ a {
 
 .submenu a {
     padding: 10px 15px;
+    margin: 10px;
 }
 
 .submenu-active { 
@@ -621,4 +622,45 @@ footer {
         list-style-type: none;
     }
 
+}
+
+/* Legal */
+#legal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/legal-hero.jpg);
+}
+
+/* Chemistry */
+#chemistry {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/chemistry-hero.jpg);
+    background-position: center;
+}
+
+/* English */
+#english {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/hero-english.jpg);
+    background-position: bottom;
+}
+
+/* Maths */
+#maths {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/hero-math.jpg);
+    background-position: center;
+}
+
+/* History */
+#history {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/history-hero.jpg);
+    background-position: center;
+}
+
+/* Digital */
+#digital {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/digital-hero.jpg);
+    background-position: center;
+}
+
+/* Physics */
+#physics {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/physics.png);
+    background-position: center;
 }
