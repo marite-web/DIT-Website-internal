@@ -404,6 +404,10 @@ footer {
     font-weight: 200;
 }
 
+.main .standard {
+    font-weight: 500;
+}
+
 .resource-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -419,10 +423,23 @@ footer {
     text-align: center;
 }
 
-.resource-section h3 {
-    grid-area: subtitle;
-    text-align: center;
-    font-weight: 100;
+iframe {
+    width: 100vw;
+    height: 70vh;
+    border: none;
+    margin: auto;
+    display: block;
+}
+
+.resource-item .video {
+    height: 32vh;
+    width: 100%;
+    margin: 10px;
+}
+
+.resource-item .slide {
+    width: 65vw;
+    height: 80vh;
 }
 
 .resource-section h1 {
@@ -430,13 +447,25 @@ footer {
     grid-area: title;
 }
 
+.resource-item h2 {
+    margin: 10px;
+}
+
+.resource-section h3 {
+    grid-area: subtitle;
+    text-align: center;
+    font-weight: 100;
+}
+
+.resource-item p {
+    font-weight: 100;
+    font-size: 1.3vw;
+    margin: 2px;
+}
+
 .resource-item{
     background-color: rgba(47,191,113, 0.5);
     padding: 15px;
-}
-
-.resource-item h2 {
-    margin: 10px;
 }
 
 .section-1 {
@@ -447,6 +476,13 @@ footer {
     grid-area: item-2;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resource-section .section-2 p {
+    font-weight: 400;
+    padding: 5px;
 }
 
 .section-3 {
@@ -458,36 +494,22 @@ footer {
 }
 
 iframe {
-    width: 100%;
-    height: 100%;
+    width: 50vw;
+    height: 80vh;
     border: none;
+    display: block;
+    margin: auto;
+}
+
+.resource-item .video {
+    height: 32vh;
+    width: 100%;
     margin: 10px;
 }
 
-.resource-item .doc {
-    margin: 15px;
-    height: 60vh;
-    align-self: center;
-    margin: auto; 
-}
-
-.resource-item p {
-    font-weight: 100;
-    font-size: 1.2vw;
-    margin: 2px;
-}
-
-.resource-section .section-2 p {
-    font-weight: 400;
-    padding: 5px;
-}
-
-.resource-item h2 {
-    margin: 6px;
-}
-
-.main .standard {
-    font-weight: 500;
+.resource-item .slide {
+    width: 65vw;
+    height: 80vh;
 }
 
 /* Chemistry */
@@ -552,6 +574,8 @@ iframe {
     background-color: rgba(47,191,113, 0.4) ;
 
 }
+
+
 
 .authtors .ind-aurthors h3 {
     margin: 5px;
@@ -773,6 +797,11 @@ iframe {
         justify-content: space-around;
         align-items: center;
 
+    }
+
+    .resource-item .slide {
+        width: 65vw;
+        height: 50vh;
     }
     
 }
