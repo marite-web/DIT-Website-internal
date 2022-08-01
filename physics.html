@@ -10,71 +10,71 @@
 </head>
 <body>
     
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li class="logo"><a href="index.html">STUDY <span class="hub">HUB</span></a></li>
-                    <li class="item"><a href="index.html">Home</a></li>
-                    <li class="item has-submenu"><a tabindex="0"> Resources </a>
-                        <ul class="submenu">
-                            <li class="subitem"><a href="maths.html">Math</a></li>
-                            <li class="subitem"><a href="chemistry.html">Chemistry</a> </li>
-                            <li class="subitem"><a href="physics.html">Physics</a></li>
-                            <li class="subitem"><a href="english.html">English</a> </li>
-                            <li class="subitem"><a href="history.html">History</a> </li>
-                            <li class="subitem"><a href="digital.html"> Digital</a></li>
-                        </ul>
-                    </li>
-                    <li class="item has-submenu "><a tabindex="0"> About</a> 
-                        <ul class="submenu">
-                            <li class="subitem"><a href="about.html">About Author</a></li>
-                            <li class="subitem"><a href="contact.html">Contact</a></li>
-                            <li class="subitem"><a href="legal.html">Legal</a></li>
-                        </ul>
-                    </li>
-                    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-                </ul>
-            </nav>
-            <div class="hero" id="physics">
-                <h1>Level 2 Physics</h1>
-            </div>
-            <script>
-                const toggle = document.querySelector('.toggle');
-        const menu = document.querySelector('.menu');
-    
-        function toggleMenu() {
-            if (menu.classList.contains("active")) {
-                menu.classList.remove("active");
-                toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-            } else {
-                menu.classList.add("active"); 
-                toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i";
-            }
-    
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="index.html">STUDY <span class="hub">HUB</span></a></li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item has-submenu"><a tabindex="0"> Resources </a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="maths.html">Math</a></li>
+                        <li class="subitem"><a href="chemistry.html">Chemistry</a> </li>
+                        <li class="subitem"><a href="physics.html">Physics</a></li>
+                        <li class="subitem"><a href="english.html">English</a> </li>
+                        <li class="subitem"><a href="history.html">History</a> </li>
+                        <li class="subitem"><a href="digital.html"> Digital</a></li>
+                    </ul>
+                </li>
+                <li class="item has-submenu "><a tabindex="0"> About</a> 
+                    <ul class="submenu">
+                        <li class="subitem"><a href="about.html">About Author</a></li>
+                        <li class="subitem"><a href="contact.html">Contact</a></li>
+                        <li class="subitem"><a href="legal.html">Legal</a></li>
+                    </ul>
+                </li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <div class="hero" id="physics">
+            <h1>Level 2 Physics</h1>
+        </div>
+        <script>
+            const toggle = document.querySelector('.toggle');
+    const menu = document.querySelector('.menu');
+
+    function toggleMenu() {
+        if (menu.classList.contains("active")) {
+            menu.classList.remove("active");
+            toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+        } else {
+            menu.classList.add("active"); 
+            toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i";
         }
-    
-        toggle.addEventListener('click', toggleMenu, false);
-    
-            const items = document.querySelectorAll(".item");
-            function toggleItem() {
-            if (this.classList.contains("submenu-active")) {
-                this.classList.remove("submenu-active");
-            } else if (menu.querySelector(".submenu-active")) {
-                menu.querySelector(".submenu-active").classList.remove("submenu-active");
+
+    }
+
+    toggle.addEventListener('click', toggleMenu, false);
+
+        const items = document.querySelectorAll(".item");
+        function toggleItem() {
+        if (this.classList.contains("submenu-active")) {
+            this.classList.remove("submenu-active");
+        } else if (menu.querySelector(".submenu-active")) {
+            menu.querySelector(".submenu-active").classList.remove("submenu-active");
+        this.classList.add("submenu-active");
+        } else {
             this.classList.add("submenu-active");
-            } else {
-                this.classList.add("submenu-active");
-            }
-            }
-    
-            for (let item of items) {
-                if (item.querySelector(".submenu")) {
-                item.addEventListener("click", toggleItem, false);
-                item.addEventListener("keypress", toggleItem, false);
-                }   
-            }
-            </script>
-        </header>
+        }
+        }
+
+        for (let item of items) {
+            if (item.querySelector(".submenu")) {
+            item.addEventListener("click", toggleItem, false);
+            item.addEventListener("keypress", toggleItem, false);
+            }   
+        }
+        </script>
+    </header>
 
     <div class="main">
         <h1>Physics</h1>
@@ -88,25 +88,28 @@
         <div class="resource-item section-2">
             <details>
                 <summary>Past Paper</summary>
-                    <div>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2021/91170-exm-2021.pdf" target="_blank">2021 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2020/91170-exm-2020.pdf" target="_blank">2020 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2019/91170-exm-2019.pdf" target="_blank">2019 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2018/91170-exm-2018.pdf" target="_blank">2018 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2017/91170-exm-2017.pdf" target="_blank">2017 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2016/91170-exm-2016.pdf" target="_blank">2016 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2015/91170-exm-2015.pdf" target="_blank">2015 Past Paper</a></p>
-                    </div>
+                    <div class="past-papers">
+                        <div>
+                            <h3>Examination Papers</h3>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2021/91170-exm-2021.pdf" target="_blank">2021 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2020/91170-exm-2020.pdf" target="_blank">2020 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2019/91170-exm-2019.pdf" target="_blank">2019 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2018/91170-exm-2018.pdf" target="_blank">2018 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2017/91170-exm-2017.pdf" target="_blank">2017 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2016/91170-exm-2016.pdf" target="_blank">2016 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2015/91170-exm-2015.pdf" target="_blank">2015 Past Paper</a></p>
+                        </div>
 
-                    <div>
-                        <h2>Assesment Schedules</h2>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2021/91170-ass-2021.pdf"target="_blank">2021 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2020/91170-ass-2020.pdf" target="_blank">2020 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2019/91170-ass-2019.pdf" target="_blank">2019 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2018/91170-ass-2018.pdf" target="_blank">2018 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2017/91170-ass-2017.pdf" target="_blank">2017 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2016/91170-ass-2016.pdf" target="_blank">2016 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2015/91170-ass-2015.pdf" target="_blank">2015 Assessment Schedules</a></p>
+                        <div>
+                            <h3>Assesment Schedules</h3>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2021/91170-ass-2021.pdf" target="_blank">2021 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2020/91170-ass-2020.pdf" target="_blank">2020 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2019/91170-ass-2019.pdf" target="_blank">2019 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2018/91170-ass-2018.pdf" target="_blank">2018 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2017/91170-ass-2017.pdf" target="_blank">2017 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2016/91170-ass-2016.pdf" target="_blank">2016 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2015/91170-ass-2015.pdf" target="_blank">2015 Assessment Schedules</a></p>
+                        </div>
                     </div>
             </details>
         </div>
@@ -114,13 +117,12 @@
         <div class="resource-item section-3">
             <details>
                 <summary>Video Resources</summary>
-                    <iframe class="video" src="https://www.youtube.com/embed/e6LDIjBhgM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/SEtc8yDu_KA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>This video was published by <a href="https://www.youtube.com/c/MrWhibleyPhysics" target="_blank">Mr Whibley</a>, which is a walk-through of a past paper of this standard.</p>
+                    <iframe class="video" src="https://www.youtube.com/embed/NlRi6Dn_W5o" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>This video was published by <a href="https://studytime.co.nz/" target="_blank"> StudyTime</a>, explaining what you need to know about this standard.</p>
-                    <iframe class="video" src="https://www.youtube.com/embed/KLoDKqUlvhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>This video was published by <a href="https://www.youtube.com/channel/UChNYEXyyV0INMBkN2XcyqDQ" target="_blank">Mr Ong Maths Lessons</a> and helps students understand the nesscary skills to past this external. </p>
             </details>
         </div>
-    </div>
     </div>
 
     <div class="resource-section">
@@ -130,25 +132,28 @@
         <div class="resource-item section-2">
             <details>
                 <Summary>Past Papers</Summary>
-                    <div>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2021/91171-exm-2021.pdf" target="_blank">2021 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2020/91171-exm-2020.pdf" target="_blank">2020 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2019/91171-exm-2019.pdf" target="_blank">2019 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2018/91171-exm-2018.pdf" target="_blank">2018 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2017/91171-exm-2017.pdf" target="_blank">2017 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2016/91171-exm-2016.pdf" target="_blank">2016 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2015/91171-exm-2015.pdf" target="_blank">2015 Past Paper</a></p>
-                    </div>
+                    <div class="past-papers">
+                        <div>
+                            <h3>Examination Papers</h3>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2021/91171-exm-2021.pdf" target="_blank">2021 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2020/91171-exm-2020.pdf" target="_blank">2020 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2019/91171-exm-2019.pdf" target="_blank">2019 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2018/91171-exm-2018.pdf" target="_blank">2018 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2017/91171-exm-2017.pdf" target="_blank">2017 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2016/91171-exm-2016.pdf" target="_blank">2016 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2015/91171-exm-2015.pdf" target="_blank">2015 Past Paper</a></p>
+                        </div>
 
-                    <div>
-                        <h2>Assesment Schedules</h2>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2021/91171-ass-2021.pdf"target="_blank">2021 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2020/91171-ass-2020.pdf" target="_blank">2020 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2019/91171-ass-2019.pdf" target="_blank">2019 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2018/91171-ass-2018.pdf" target="_blank">2018 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2017/91171-ass-2017.pdf" target="_blank">2017 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2016/91171-ass-2016.pdf" target="_blank">2016 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2015/91171-ass-2015.pdf" target="_blank">2015 Assessment Schedules</a></p>
+                        <div>
+                            <h3>Assesment Schedules</h3>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2021/91171-ass-2021.pdf" target="_blank">2021 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2020/91171-ass-2020.pdf" target="_blank">2020 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2019/91171-ass-2019.pdf" target="_blank">2019 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2018/91171-ass-2018.pdf" target="_blank">2018 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2017/91171-ass-2017.pdf" target="_blank">2017 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2016/91171-ass-2016.pdf" target="_blank">2016 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2015/91171-ass-2015.pdf" target="_blank">2015 Assessment Schedules</a></p>
+                        </div>
                     </div>
             </details>
         </div>
@@ -156,10 +161,10 @@
         <div class="resource-item section-3">
             <details>
                 <summary>Video Resources</summary>
-                    <iframe class="video" src="https://www.youtube.com/embed/e6LDIjBhgM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/STbSGwxwDBw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>This video was published by <a href="https://studytime.co.nz/" target="_blank"> StudyTime</a>, explaining what you need to know about this standard.</p>
-                    <iframe class="video" src="https://www.youtube.com/embed/KLoDKqUlvhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>This video was published by <a href="https://www.youtube.com/channel/UChNYEXyyV0INMBkN2XcyqDQ" target="_blank">Mr Ong Maths Lessons</a> and helps students understand the nesscary skills to past this external. </p>
+                    <iframe class="video" src="https://www.youtube.com/embed/6KPMa825uck" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>This video was published by <a href="https://www.youtube.com/c/MrWhibleyPhysics" target="_blank">Mr Whibley</a>, which is a walk-through of a past paper of this standard.</p>
             </details>
         </div>
     </div>
@@ -171,25 +176,28 @@
         <div class="resource-item section-2">
             <details>
                 <summary>Past Papers</summary>
-                    <div>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2021/91173-exm-2021.pdf" target="_blank">2021 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2020/91173-exm-2020.pdf" target="_blank">2020 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2019/91173-exm-2019.pdf" target="_blank">2019 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2018/91173-exm-2018.pdf" target="_blank">2018 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2017/91173-exm-2017.pdf" target="_blank">2017 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2016/91173-exm-2016.pdf" target="_blank">2016 Past Paper</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2015/91173-exm-2015.pdf" target="_blank">2015 Past Paper</a></p>
-                    </div>
+                    <div class="past-papers">
+                        <div>
+                            <h3>Examination Papers</h3>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2021/91173-exm-2021.pdf" target="_blank">2021 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2020/91173-exm-2020.pdf" target="_blank">2020 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2019/91173-exm-2019.pdf" target="_blank">2019 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2018/91173-exm-2018.pdf" target="_blank">2018 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2017/91173-exm-2017.pdf" target="_blank">2017 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2016/91173-exm-2016.pdf" target="_blank">2016 Past Paper</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2015/91173-exm-2015.pdf" target="_blank">2015 Past Paper</a></p>
+                        </div>
 
-                    <div>
-                    <h2>Assesment Schedules</h2>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2021/91173-ass-2021.pdf"target="_blank">2021 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2020/91173-ass-2020.pdf" target="_blank">2020 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2019/91173-ass-2019.pdf" target="_blank">2019 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2018/91173-ass-2018.pdf" target="_blank">2018 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2017/91173-ass-2017.pdf" target="_blank">2017 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2016/91173-ass-2016.pdf" target="_blank">2016 Assessment Schedules</a></p>
-                        <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2015/91173-ass-2015.pdf" target="_blank">2015 Assessment Schedules</a></p>
+                        <div>
+                        <h3>Assesment Schedules</h3>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2021/91173-ass-2021.pdf" target="_blank">2021 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2020/91173-ass-2020.pdf" target="_blank">2020 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2019/91173-ass-2019.pdf" target="_blank">2019 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2018/91173-ass-2018.pdf" target="_blank">2018 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2017/91173-ass-2017.pdf" target="_blank">2017 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2016/91173-ass-2016.pdf" target="_blank">2016 Assessment Schedules</a></p>
+                            <p><a href="https://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2015/91173-ass-2015.pdf" target="_blank">2015 Assessment Schedules</a></p>
+                        </div>
                     </div>
             </details>
         </div>
@@ -197,9 +205,9 @@
         <div class="resource-item section-3">
             <details>
                 <summary>Video Resources</summary>
-                <iframe class="video" src="https://www.youtube.com/embed/-Wm3-emIr60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/-Wm3-emIr60" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>This video was published by <a href="https://www.youtube.com/c/MrWhibleyPhysics" target="_blank">Mr Whibley</a>, which is a walk-through of a past paper of this standard.</p>
-                <iframe class="video" src="https://www.youtube.com/embed/-ULuxNWFJIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/-ULuxNWFJIM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>This video was published by <a href="https://studytime.co.nz/" target="_blank"> StudyTime</a>, explaining what you need to know about this standard.</p>
             </details>
         </div>
