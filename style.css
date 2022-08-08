@@ -175,7 +175,6 @@ a {
     grid-gap: 25px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    align-content: center;
     text-align: center;
     padding: 15px;
     margin: 25px;
@@ -422,7 +421,6 @@ footer {
     margin: 25px;
     grid-gap: 15px;
     justify-content: center;
-    align-items: top;
     text-align: center;
 }
 
@@ -431,7 +429,7 @@ iframe {
     height: 80vh;
     display: block;
     border: none;
-    margin: auto;
+    margin: 15px auto;
 }
 
 .resource-item .video {
@@ -576,28 +574,29 @@ details summary::after {
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     justify-content: center;
-    align-items: center;
     margin: 20px;
 }
 
 .ind-aurthors{
     padding: 10px;
-    background-color: rgba(47,191,113, 0.4) ;
-
+    background-color: rgba(47,191,113, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .authtors .ind-aurthors h3 {
-    margin: 5px;
+    margin: 10px 15px;
 }
 
 .authtors .ind-aurthors p {
     font-weight: 100;
-    margin: 5px;
 }
 
 .authtors .ind-aurthors img {
     width: 60%;
-    height: 40%;
+    height: 70%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -799,7 +798,7 @@ details summary::after {
         font-size: 15px;
     }
 
-    .section-2 .past-papers {
+    .section-2 {
         grid-area: item-2;
         display: flex;
         flex-direction: row;
@@ -807,13 +806,27 @@ details summary::after {
         align-items: center;
     }
 
-    .section-2 .past-papers div {
+    .section-2 div {
         margin: 20px 10px;
     }
 
     .resource-item .slide {
         width: 65vw;
         height: 50vh;
+    }
+
+    detail[open] summary::after {
+        transition: rotate(90reg);
+    }
+
+    /* About author */
+    .authtors {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        justify-content: center;
+        margin: 20px;
     }
     
 }
