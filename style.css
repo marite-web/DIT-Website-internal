@@ -21,9 +21,6 @@
 nav {
     background-color: rgb(237,125,58) ;
     padding: 0 15px;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0px 2px 25px #3e3e3e;
 }
 
 a { 
@@ -97,6 +94,7 @@ a {
 .submenu-active { 
     border-radius: 3px;
 }
+
 
 /* hero image */
 
@@ -386,11 +384,6 @@ footer {
     margin: 0px 0px 10px 0px;
 }
 
-/* Legal */
-#legal {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/legal-hero.jpg);
-}
-
 /* Resource Pages */
 .main {
     text-align: center;
@@ -416,10 +409,11 @@ footer {
     grid-template-areas: 
     "title title"
     "subtitle subtitle"
-    "item-2 item-3"
+    "item-2 item-2"
+    "item-3 item-3"
     "item-1 item-1";
     margin: 25px;
-    grid-gap: 15px;
+    grid-gap: 10px;
     justify-content: center;
     text-align: center;
 }
@@ -429,7 +423,7 @@ iframe {
     height: 80vh;
     display: block;
     border: none;
-    margin: 15px auto;
+    margin: 10px auto;
 }
 
 .resource-item .video {
@@ -464,10 +458,6 @@ iframe {
 .resource-item{
     background-color: rgba(47,191,113, 0.5);
     padding: 15px;
-}
-
-.section-1 {
-    grid-area: item-1;
 }
 
 .section-2 {
@@ -521,6 +511,10 @@ details summary::after {
     padding-left: 10px;
 }
 
+.section-1 {
+    grid-area: item-1;
+}
+
 /* Chemistry */
 #chemistry {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/chemistry-hero.jpg);
@@ -567,6 +561,11 @@ details summary::after {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)), url(img/about-hero.jpeg);
 }
 
+/* Contact */
+#contact {
+    background-image: linear-gradient(rgba(3, 2, 2, 0.664),rgba(3, 2, 2, 0.664)), url(img/hero-contact.jpeg);
+}
+
 /* about authors */ 
 .authtors {
     display: grid;
@@ -597,6 +596,49 @@ details summary::after {
 .authtors .ind-aurthors img {
     width: 60%;
     height: 70%;
+}
+
+/* Contact Page */
+
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    margin: 20px 10px;
+    font-size: 40px;
+}
+
+.contact #phone {
+    color: rgb(239,45,86);
+    font-weight: 700;
+}
+
+.contact p {
+    margin: 5px;
+    padding: 5px;
+    font-weight: 300;
+    font-size: larger;
+}
+
+.contact #email {
+    color: rgb(140,216,103);
+    font-weight: 700;
+}
+
+.contact #post {
+    color: rgb(47,191,113);
+    font-weight: 700;
+}
+
+.contact iframe {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/contact-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    height: 80vh;
+    width: 100vw;
+    margin: 30px auto;
 }
 
 @media only screen and (max-width: 800px) {
@@ -806,17 +848,13 @@ details summary::after {
         align-items: center;
     }
 
-    .section-2 div {
+    .section-2 .list {
         margin: 20px 10px;
     }
 
     .resource-item .slide {
         width: 65vw;
         height: 50vh;
-    }
-
-    detail[open] summary::after {
-        transition: rotate(90reg);
     }
 
     /* About author */
