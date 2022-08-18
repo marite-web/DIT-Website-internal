@@ -848,12 +848,17 @@ details summary::after {
         font-size: 15px;
     }
 
-    .section-2 {
+    .past-papers {
         grid-area: item-2;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        font-size: 15px;
+    }
+
+    .past-papers h3{
+        font-size: 20px;
     }
 
     .section-2 .list {
