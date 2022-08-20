@@ -39,7 +39,7 @@ a {
 }
 
 .item a:hover, item a:hover::after {
-    color: (rgb(54,53,55))
+    color: rgb(54,53,55);
 }
 
 .has-submenu > a::after{
@@ -55,7 +55,6 @@ a {
 .menu {
     display: flex;
     justify-content: space-between;
-    align-items: right;
     padding: 5px 10px 5px 10px;
 
 }
@@ -173,16 +172,16 @@ a {
 
 .resource-grid {
     display: grid;
-    grid-gap: 25px;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    text-align: center;
-    padding: 15px;
-    margin: 25px;
     grid-template-areas:
     "title title title"
     "maths english history"
     "digital physics chemistry";
+    margin: 25px;
+    grid-gap: 25px;
+    justify-content: center;
+    text-align: center;
+    
 }
 
 .title {
@@ -300,7 +299,6 @@ a .resources  {
 .review {
     display: grid;
     background-image: linear-gradient(rgba(71, 70, 70, 0.5),rgba(71, 70, 70, 0.5)), url(img/review-background.jpeg);
-    background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -449,12 +447,14 @@ iframe {
     grid-area: subtitle;
     text-align: center;
     font-weight: 100;
+    margin-top: 25px;
 }
 
 .resource-item p {
     font-weight: 100;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     margin: 2px;
+
 }
 
 .resource-item{
@@ -469,7 +469,7 @@ iframe {
 .past-papers {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     justify-content: center;
 }
 
@@ -754,6 +754,9 @@ details summary::after {
         "physics chemistry";
     }
 
+    .digital {
+        font-size: 7px;
+    }
 
     /* Reviews */
 
@@ -848,15 +851,6 @@ details summary::after {
         font-size: 15px;
     }
 
-    .past-papers {
-        grid-area: item-2;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 15px;
-    }
-
     .past-papers h3{
         font-size: 20px;
     }
@@ -870,16 +864,9 @@ details summary::after {
         height: 50vh;
     }
 
-    /* About author */
-    .authtors {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
-        text-align: center;
-        justify-content: center;
-        margin: 20px;
+    .section-1 iframe {
+        display: none;
     }
-    
 }
 
 @media only screen and (min-width: 800px) {
@@ -938,3 +925,27 @@ details summary::after {
     }
 
 }
+
+@media only screen and (max-width: 955px){
+    /* About author */
+    .authtors {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+}
+
+@media only screen and (max-width:800px) and (min-width:500px){
+    .past-papers {
+        grid-area: item-2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 15px;
+    }
+} 

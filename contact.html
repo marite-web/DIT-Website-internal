@@ -41,39 +41,39 @@
 
         <script>
             const toggle = document.querySelector('.toggle');
-    const menu = document.querySelector('.menu');
+            const menu = document.querySelector('.menu');
 
-    function toggleMenu() {
-        if (menu.classList.contains("active")) {
-            menu.classList.remove("active");
-            toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-        } else {
-            menu.classList.add("active"); 
-            toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i";
+        function toggleMenu() {
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+                toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+            } else {
+                menu.classList.add("active"); 
+                toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i";
+            }
+
         }
 
-    }
+        toggle.addEventListener('click', toggleMenu, false);
 
-    toggle.addEventListener('click', toggleMenu, false);
-
-        const items = document.querySelectorAll(".item");
-        function toggleItem() {
-        if (this.classList.contains("submenu-active")) {
-            this.classList.remove("submenu-active");
-        } else if (menu.querySelector(".submenu-active")) {
-            menu.querySelector(".submenu-active").classList.remove("submenu-active");
-        this.classList.add("submenu-active");
-        } else {
+            const items = document.querySelectorAll(".item");
+            function toggleItem() {
+            if (this.classList.contains("submenu-active")) {
+                this.classList.remove("submenu-active");
+            } else if (menu.querySelector(".submenu-active")) {
+                menu.querySelector(".submenu-active").classList.remove("submenu-active");
             this.classList.add("submenu-active");
-        }
-        }
+            } else {
+                this.classList.add("submenu-active");
+            }
+            }
 
-        for (let item of items) {
-            if (item.querySelector(".submenu")) {
-            item.addEventListener("click", toggleItem, false);
-            item.addEventListener("keypress", toggleItem, false);
-            }   
-        }
+            for (let item of items) {
+                if (item.querySelector(".submenu")) {
+                item.addEventListener("click", toggleItem, false);
+                item.addEventListener("keypress", toggleItem, false);
+                }   
+            }
         </script>
     </header>
     <div class="contact"> 
@@ -81,7 +81,7 @@
         <p><span id="phone">Phone:</span> +64 0274411337</p>
         <p><span id="email">Email:</span> 19mbalzarini@wakatipu.school.nz</p>
         <p><span id="post">Postal Adress:</span> P.O Box 170, Arrowtown, Otago, New Zealand, 9371</p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYZt8FstVo6soiu4Cejh6BzcOiDFow50fRYtTNNghNRrckWw/viewform?embedded=true">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYZt8FstVo6soiu4Cejh6BzcOiDFow50fRYtTNNghNRrckWw/viewform?embedded=true"></iframe>
     </div>
     <footer>
         <div class="footer">
@@ -127,6 +127,3 @@
     </footer>
 </body>
 </html> 
-    
-</body>
-</html>
